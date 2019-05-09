@@ -1,6 +1,6 @@
 {
   "name": "checkrc",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "version check and eslint",
   "main": "index.js",
   "scripts": {
