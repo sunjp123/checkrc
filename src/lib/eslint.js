@@ -11,9 +11,7 @@ const path = require('path')
 module.exports = (options) => {
     return wapper(new ProcessHandler(async function eslint() {
 		if(!await Utils.hasFile('.eslintrc')&&!await Utils.hasFile('.eslintrc.json')){
-			console.log(path.resolve())
-			console.log(require.resolve('checkrc'))
-			//await copy(path.resolve())
+			await copy(path.resolve(__dirname,"../")+`/config/.eslintrc.json`, path.resolve()+'/.eslintrc.json')
 		}
 		if(!packages.eslint.installed()){
 			await install('eslint')

@@ -16,17 +16,17 @@ const checkVersion = require('../lib/checkVersion')
 
 module.exports = async (options) =>{
     if(options.async){
-        if(options.checkVersion && packages.xpVersion.installed){
+        if(options.checkVersion){
             checkVersion()
         }
         if(options.eslint){
 			eslint(options.eslint)
         } 
     }else{
-        if(options.checkVersion && packages.xpVersion.installed){
+        if(options.checkVersion){
             await checkVersion()
         }
-        if(options.eslint && packages.eslint.installed){
+        if(options.eslint){
             await eslint(options.eslint)
         } 
     }
