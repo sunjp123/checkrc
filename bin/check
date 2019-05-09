@@ -1,0 +1,26 @@
+#!/usr/bin/env node
+
+const program = require('commander')
+
+const check  = require('../src/command/check')
+
+const { version } = require('../package') 
+
+
+program.version(version)
+	   
+	   
+
+program.command('start')
+	.alias('s')
+	.option('-n, --no-ignore-eslint', 'ignore eslint')
+	.option('-x, --check-version', 'check version')
+	.option('-e, --eslint [params]',"elist params use ',' Separate",params=>params.split(','))
+	.option('-a, --async','async')
+	.action(check)
+
+
+program.parse(process.argv);
+if (!program.args.length) {
+  program.help()
+}

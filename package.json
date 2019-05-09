@@ -1,0 +1,40 @@
+{
+  "name": "checkrc",
+  "version": "1.0.1",
+  "description": "version check and eslint",
+  "main": "index.js",
+  "scripts": {
+    "test": "start"
+  },
+  "bin": {
+    "checkrc": "./bin/check"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sunjp123/checkrc.git"
+  },
+  "author": "sunjp123",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {
+    "chalk": "2.4.2",
+    "commander": "2.20.0",
+    "eslint": "5.16.0",
+    "eslint-plugin-react": "^7.12.4",
+    "inquirer": "6.2.2",
+    "log-symbols": "2.2.0",
+    "ora": "3.4.0",
+    "rc": "^1.2.8",
+    "x-package-version-strict-check": "1.6.0"
+  },
+  "bugs": {
+    "url": "https://github.com/sunjp123/checkrc/issues"
+  },
+  "homepage": "https://github.com/sunjp123/checkrc#readme",
+  "keywords": [
+    "version",
+    "check",
+    "checkrc",
+    "eslint"
+  ]
+}
