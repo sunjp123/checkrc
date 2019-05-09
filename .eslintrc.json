@@ -8,15 +8,9 @@
     },
     "extends": [
         "eslint:recommended",
-        "plugin:react/recommended"
     ],
     "globals": {
         "google": false,
-        "CLogin": false,
-        "__SSO_booking": false,
-        "GlobalSwitches": false,
-        "GlobalSearchCriteria": false,
-        "GlobalConfigs": false,
         "process":false
     },
     "parserOptions": {
@@ -30,8 +24,6 @@
         "no-case-declarations": 0,
         "no-console": 0,
         "no-useless-escape": 0,
-        "react/prop-types": 0,
-        "react/display-name": 0,
         "no-unused-vars": [
             1,
             {
@@ -85,25 +77,6 @@
         "no-new-symbol": 2,
         "no-this-before-super": 2,
         "require-yield": 2,
-        "react/jsx-key": 2,
-        "react/jsx-no-comment-textnodes": 2,
-        "react/jsx-no-duplicate-props": 2,
-        "react/jsx-no-target-blank": 1,
-        "react/jsx-no-undef": 2,
-        "react/jsx-uses-react": 1,
-        "react/jsx-uses-vars": 1,
-        "react/no-children-prop": 1,
-        "react/no-danger-with-children": 2,
-        "react/no-deprecated": 1,
-        "react/no-direct-mutation-state": 2,
-        "react/no-find-dom-node": 1,
-        "react/no-is-mounted": 1,
-        "react/no-render-return-value": 2,
-        "react/no-string-refs": 1,
-        "react/no-unescaped-entities": 2,
-        "react/no-unknown-property": 1,
-        "react/react-in-jsx-scope": 1,
-        "react/require-render-return": 2
     },
     "overrides": [
         {

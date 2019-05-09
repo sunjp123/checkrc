@@ -12,13 +12,15 @@ const symbols = require('log-symbols');
 const packages = require('../lib/package')
 const eslint = require('../lib/eslint')
 const checkVersion = require('../lib/checkVersion')
+
+
 module.exports = async (options) =>{
     if(options.async){
         if(options.checkVersion && packages.xpVersion.installed){
             checkVersion()
         }
-        if(options.eslint && packages.eslint.installed){
-            eslint(options.eslint)
+        if(options.eslint){
+			eslint(options.eslint)
         } 
     }else{
         if(options.checkVersion && packages.xpVersion.installed){
